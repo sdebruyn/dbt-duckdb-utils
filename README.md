@@ -1,6 +1,6 @@
 # dbt_duckdb_utils
 
-Utility package for project using [dbt](https://www.getdbt.com/) and [duckdb](https://duckdb.org/) with the adapter [dbt-duckdb](https://github.com/jwills/dbt-duckdb).
+Utility package for projects using [dbt](https://www.getdbt.com/) and [duckdb](https://duckdb.org/) with the adapter [dbt-duckdb](https://github.com/jwills/dbt-duckdb).
 
 ## Installation
 
@@ -8,23 +8,9 @@ Add to your packages.yml:
 
 ```yaml
 packages:
-  - git: https://github.com/sdebruyn/dbt-duckdb-utils.git
-    revision: main
+  - package: sdebruyn/dbt_duckdb_utils
+    version: 0.1.0 # or any other version
 ```
-
-<details>
-    <summary>Note about upgrades once in dbt Hub</summary>
-
-Once this is in dbt Hub, this becomes:
-
-```yaml
-packages:
-
-- package: dbt_duckdb_utils
-    version: 0.1.0
-```
-
-</details>
 
 Add to your dbt_project.yml:
 
