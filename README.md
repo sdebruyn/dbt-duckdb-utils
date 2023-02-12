@@ -31,11 +31,11 @@ Add to your dbt_project.yml:
 ```yaml
 dispatch:
   - macro_namespace: dbt_utils
-    search_order: [duckdb_dbt_utils, dbt_utils]
+    search_order: [dbt_duckdb_utils, dbt_utils]
   - macro_namespace: dbt_expectations
-    search_order: [duckdb_dbt_utils, dbt_expectations]
+    search_order: [dbt_duckdb_utils, dbt_expectations]
   - macro_namespace: dbt_date
-    search_order: [duckdb_dbt_utils, dbt_date]
+    search_order: [dbt_duckdb_utils, dbt_date]
 ```
 
 ## Coverage

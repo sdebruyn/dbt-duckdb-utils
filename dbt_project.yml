@@ -1,4 +1,4 @@
-name: 'duckdb_dbt_utils'
+name: 'dbt_duckdb_utils'
 version: '0.1.0'
 config-version: 2
 
