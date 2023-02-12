@@ -1,3 +1,3 @@
 {%- macro duckdb__day_name(date, short) -%}
-    dayname({{ date }})
+    strftime({{ date }}::date, '{{ "%a" if short else "%A" }}')
 {%- endmacro %}
