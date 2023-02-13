@@ -16,10 +16,6 @@ Add to your dbt_project.yml:
 
 ```yaml
 dispatch:
-  - macro_namespace: dbt_utils
-    search_order: [dbt_duckdb_utils, dbt_utils]
-  - macro_namespace: dbt_expectations
-    search_order: [dbt_duckdb_utils, dbt_expectations]
   - macro_namespace: dbt_date
     search_order: [dbt_duckdb_utils, dbt_date]
 ```
@@ -28,9 +24,8 @@ dispatch:
 
 The goal is to cover functions from
 
-* [dbt_utils](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/)
 * [dbt_date](https://hub.getdbt.com/calogica/dbt_date/latest/)
-* [dbt_expectations](https://hub.getdbt.com/calogica/dbt_expectations/latest/)
+* [dbt_expectations](https://hub.getdbt.com/calogica/dbt_expectations/latest/) (if needed)
 
 Feel free to contribute the ones you're missing through pull requests, they will be added as we go along.
 
